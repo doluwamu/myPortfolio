@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/welcome.css" />
+    <link rel="stylesheet" href="./assets/styles/about.css" />
+
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.min.css" />
+
+    <title>My portfolio</title>
+  </head>
+  <body>
+    <div class="all__body">
+      <!-- Navbar starts -->
+      <nav class="nav__bar">
+        <button class="nav-btn" onclick="openNav()">&#9776;</button>
+        <div class="nav__header">
+          <header class="header__title">Doluwamu</header>
+        </div>
+        <ul class="nav__ul">
+          <li class="nav__link"><a href="#welcome">Welcome</a></li>
+          <li class="nav__link"><a href="#about">About-me</a></li>
+          <li class="nav__link"><a href="#">Contact-me</a></li>
+          <li class="nav__link"><a href="#">Posts</a></li>
+          <li>
+            <img src="./assets/img/doluwamu.jpg" alt="" class="my__image" />
+          </li>
+        </ul>
+      </nav>
+      <!-- Navbar ends -->
+      <!-- Body starts -->
+      <div class="main__body">
+        <div class="welcome" id="welcome">
+          <div class="icons">
+            <a href="#"
+              ><i
+                class="fab fa-twitter"
+                style="float: right; margin-left: 1rem"
+              ></i
+            ></a>
+            <!-- <a href="#"
+              ><i
+              class="fab fa-facebook"
+                style="float: right; margin-right: 4rem"
+              ></i
+            ></a> -->
+            <a href="#"
+              ><i
+                class="fab fa-linkedin"
+                style="float: right; margin-right: 1rem"
+              ></i
+            ></a>
+          </div>
+          <!-- Background image starts -->
+          <div class="image">
+            <!-- <div class="img__text"> -->
+            <h1 class="img__text h1">Hi,</h1>
+            <h2 class="img__text h2">I'm Doluwamu</h2>
+            <!-- </div> -->
+          </div>
+          <!-- Background image ends -->
+          <div class="about-me" id="about">
+            <h1 class="about__header">About-me</h1>
+            <div class="about__description">
+              <p class="paragraph para__one">
+                Doluwamu is a web developer, a MERN stack dev and a UI/UX
+                designer with great passion for programming. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Ipsam repudiandae
+                repellat expedita quas, iste iusto ut perspiciatis ullam
+                incidunt beatae in non animi corrupti deleniti voluptatibus,
+                distinctio voluptatem quia accusamus.
+              </p>
+              <h3 class="about__technologies">Technologies I use</h3>
+              <ul class="technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+                <li>Reactjs</li>
+                <li>Redux</li>
+                <li>Nodejs</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Figma</li>
+                <li>Justinmind-designer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Body ends -->
+      <!-- Footer starts -->
+      <footer class="footer"></footer>
+      <!-- Footer ends -->
+    </div>
+
+    <!-- Font awesome JS -->
+    <script src="fontawesome-free-5.11.2-web/js/all.js"></script>
+    <script src="fontawesome-free-5.11.2-web/js/all.min.js"></script>
+
+    <script>
+      const openNav = () => {
+        const navUl = document.querySelector(".nav__ul");
+        const navBtn = document.querySelector(".nav-btn");
+        navUl.classList.toggle("show-nav");
+        navBtn.classList.toggle("add__shadow");
+        // navUl.style.transform = "translateX(0)";
+      };
+    </script>
+  </body>
+</html>
