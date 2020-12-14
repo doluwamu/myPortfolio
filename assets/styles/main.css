@@ -47,7 +47,7 @@
   min-width: 900px;
   height: 45px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: -1.5rem;
@@ -124,18 +124,22 @@
   .nav__bar ul {
     padding: 1rem 2rem;
     position: absolute;
-    min-width: 104vw;
+    min-width: 103vw;
     height: 250px;
     top: 112px;
     z-index: 111;
     transform: translateX(-90rem);
     transition: all 0.5s;
     display: block;
+    overflow: hidden;
     background: rgb(245, 240, 240);
   }
 
   .nav__bar ul li {
-    padding: 1rem 1rem;
+    padding: 1rem;
+    /* background-color: blue; */
+    width: 95%;
+    margin: 0 auto;
   }
 
   .show-nav {
@@ -149,6 +153,18 @@
     position: absolute;
     top: 20px;
     left: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav__bar ul {
+    min-width: 105vw;
+    height: 150px;
+    padding: 0.5rem 2rem;
+  }
+
+  .nav__bar ul li {
+    padding: 0.5rem;
   }
 }
 

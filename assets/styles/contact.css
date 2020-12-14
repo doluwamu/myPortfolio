@@ -1,0 +1,77 @@
+.contact-me {
+  background-color: #ffffff;
+  max-width: 65rem;
+  margin: 4rem auto;
+  padding: 3rem 0;
+  text-align: center;
+  box-shadow: 0 0 3px gray;
+  border-radius: 5px;
+  /* margin: 0 1rem; */
+}
+
+.contact__header {
+  /* background: white; */
+  color: rgb(68, 68, 68);
+  width: 10rem;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+.contact-form {
+  /* background: black; */
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 70%;
+}
+
+.contact-form .input__section {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  /* background: red; */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form .input__section label {
+  /* background: yellow; */
+  /* max-width: 7rem; */
+  text-align: left;
+}
+
+.input__section label {
+  padding: 3px 0;
+}
+
+.input__section input[type="text"],
+.input__section input[type="email"],
+.input__section textarea,
+.input__section button {
+  padding: 0.5rem 0.2rem;
+  outline: none;
+}
+
+.input__section textarea {
+  resize: none;
+}
+
+.input__section button {
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+
+.input__section button:hover {
+  background: rgb(49, 48, 48);
+}
+
+@media screen and (max-width: 850px) {
+  .contact-me {
+    margin: 2rem 1rem;
+  }
+}
