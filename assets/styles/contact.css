@@ -38,10 +38,8 @@
   /* background: yellow; */
   /* max-width: 7rem; */
   text-align: left;
-}
-
-.input__section label {
   padding: 3px 0;
+  font-weight: 600;
 }
 
 .input__section input[type="text"],
