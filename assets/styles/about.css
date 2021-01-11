@@ -1,10 +1,10 @@
 .about-me {
-  background-color: #ffffff;
+  background-color: var(--white);
   max-width: 65rem;
   margin: 4rem auto;
   padding: 3rem 0;
   text-align: center;
-  box-shadow: 0 0 3px gray;
+  box-shadow: 0 0 3px var(--gray);
   border-radius: 5px;
   /* margin: 0 1rem; */
 }
@@ -12,8 +12,8 @@
 .about__header,
 .about__description .about__technologies {
   /* background: white; */
-  color: rgb(68, 68, 68);
-  border-bottom: 1px solid rgb(68, 68, 68);
+  color: var(--main_body_text_color);
+  border-bottom: 1px solid var(--main_body_text_color);
 }
 
 .about__header {
@@ -46,7 +46,7 @@
   margin: 2rem auto 0.5rem;
   min-width: 20px;
   max-width: 200px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--black);
 }
 
 .about__description ul {

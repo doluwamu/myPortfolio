@@ -1,20 +1,20 @@
 .contact-me {
-  background-color: #ffffff;
+  background-color: var(--white);
   max-width: 65rem;
   margin: 4rem auto;
   padding: 3rem 0;
   text-align: center;
-  box-shadow: 0 0 3px gray;
+  box-shadow: 0 0 3px var(--gray);
   border-radius: 5px;
   /* margin: 0 1rem; */
 }
 
 .contact__header {
   /* background: white; */
-  color: rgb(68, 68, 68);
+  color: var(--main_body_text_color);
   width: 10rem;
   margin: 0 auto;
-  border-bottom: 1px solid rgb(68, 68, 68);
+  border-bottom: 1px solid var(--main_body_text_color);
 }
 
 .contact-form {
@@ -55,8 +55,8 @@
 }
 
 .input__section button {
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
   font-size: 20px;
   border: none;
   border-radius: 5px;
@@ -65,7 +65,7 @@
 }
 
 .input__section button:hover {
-  background: rgb(49, 48, 48);
+  background: var(--main_body_text_color);
 }
 
 @media screen and (max-width: 850px) {
