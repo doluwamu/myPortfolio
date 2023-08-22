@@ -17,14 +17,13 @@ const AboutMe = () => {
       <div className="flex flex-col gap-4 md:w-2/3">
         <h1 className="text-3xl font-bold">About me</h1>
         <p className="text-justify">
-          I am a fullstack developer and product designer with over three years
-          of experience in building web and mobile technologies. With knowledge
-          and experience in multiple languages and frameworks on both the
-          frontend and backend side of development, I am pretty confident in
-          taking up challenging and interesting tasks.
+          I am a fullstack developer and senior product designer with over three
+          years of experience in building/designing web and mobile products.
+          With knowledge and experience in multiple languages and frameworks on
+          both the frontend and backend side of development, I am pretty
+          confident in taking up new and challenging tasks.
           <br />
-          <br />
-          I’m open to roles that can help me contribute my skill sets to
+          <br />I am open to roles where I can contribute my skillset in
           creating awesome and mind blowing products
         </p>
       </div>
