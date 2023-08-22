@@ -5,8 +5,8 @@ const AboutMe = () => {
   return (
     <div
       id="about"
-      className="flex flex-col-reverse gap-16 my-24 px-6 md:flex-row md:py-2"
-      style={{ maxWidth: "1000px", margin: "0 auto" }}
+      className="flex flex-col-reverse items-center justify-center gap-16 my-24 px-6 md:flex-row md:py-2"
+      style={{ maxWidth: "1100px", margin: "0 auto" }}
     >
       {/* image */}
       <div className="flex justify-center md:w-1/3 md:justify-left">

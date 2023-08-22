@@ -13,7 +13,7 @@ export default {
       colors: {
         green: "hsla(191, 88%, 37%, 1)",
         darkGrey: "hsla(0, 0%, 17%, 1)",
-        lightGrey: "hsla(0, 0%, 97%, 1)",
+        lightGrey: "hsl(0, 0%, 89%)",
       },
     },
   },
