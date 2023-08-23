@@ -27,13 +27,13 @@ const Hero = () => {
     >
       {/* Text */}
       <div className="flex flex-col justify-center items-center gap-4 md:items-start md:w-1/2">
-        <h1 className="text-4xl font-black text-center md:text-left md:text-6xl">
+        <h1 className="text-4xl text-black font-black text-center md:text-left md:text-6xl">
           Hi, I’m Doluwamu
         </h1>
-        <p className="text-1xl font-bold text-center md:text-left md:text-3xl">
+        <p className="text-1xl text-black font-bold text-center md:text-left md:text-3xl">
           I’m a <span ref={el}></span>
         </p>
-        <p className="text-center md:text-left">
+        <p className="text-center text-black md:text-left">
           I build websites and mobile app as well as make designs for amazing
           projects.
           <br />

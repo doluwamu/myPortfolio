@@ -19,6 +19,8 @@ function App() {
       <AboutMe />
       <br />
       <br />
+      <br />
+      <br />
       <Stack />
     </main>
   );

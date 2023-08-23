@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  color-scheme: dark light;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   /* color: hsl(0, 0%, 89%); */
