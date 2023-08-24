@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import heropic from "../assets/img/hero_pic.png";
 import Typed from "typed.js";
+// import resume from "../assets/docs/resume.pdf";
 
 const Hero = () => {
   const el = React.useRef(null);
@@ -41,18 +42,11 @@ const Hero = () => {
         </p>
         <div className="buttons flex gap-4">
           <a
-            href="mailto:adoluwamu@gmail.com"
-            className="hero-btn border px-5 py-2 rounded-lg border-green text-green"
-          >
-            {" "}
-            Get in touch
-          </a>
-
-          <a
-            className="hero-btn border px-5 py-2 rounded-lg border-darkGrey bg-darkGrey text-white"
+            className="hero-btn border px-5 py-2 rounded-lg border-green bg-darkGrey text-white"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1p5eKVKXYis-lapqu1ZiNs5b_yKY0Jvf9/view?usp=sharing"
+            href="/docs/resume.pdf"
+            // "https://drive.google.com/file/d/1p5eKVKXYis-lapqu1ZiNs5b_yKY0Jvf9/view?usp=sharing"
           >
             Resume
           </a>

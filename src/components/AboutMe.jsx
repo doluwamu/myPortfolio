@@ -26,6 +26,14 @@ const AboutMe = () => {
           <br />I am open to roles where I can contribute my skillset in
           creating awesome and mind blowing products
         </p>
+        <div className="flex">
+          <a
+            href="mailto:adoluwamu@gmail.com"
+            className="get-in-touch border px-5 py-2 rounded-lg border-green text-green"
+          >
+            <span>Get in touch</span>
+          </a>
+        </div>
       </div>
     </div>
   );
