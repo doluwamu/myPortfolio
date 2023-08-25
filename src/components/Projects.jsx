@@ -31,13 +31,13 @@ const Projects = () => {
 
               <div className="project-details flex flex-col items-center gap-3 absolute">
                 <p
-                  className="text-2xl font-bold text-center"
+                  className="text-2xl font-bold text-white text-center"
                   style={{ maxWidth: "250px" }}
                 >
                   {design.name}
                 </p>
                 <p
-                  className="text-1xl text-center"
+                  className="text-1xl text-white text-center"
                   style={{ maxWidth: "250px" }}
                 >
                   {design.description}

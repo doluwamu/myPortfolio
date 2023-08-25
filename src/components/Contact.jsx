@@ -82,7 +82,7 @@ const Contact = () => {
         <div className="other-contact-info flex flex-col gap-4 py-8 xsm:items-center md:items-start">
           <a href="tel:+2349019307489" className="flex gap-2 items-center">
             <img src={phone} alt="img" style={{ height: "12px" }} />
-            <span>+234 901 9307 489</span>
+            <span className="text-white">+234 901 9307 489</span>
           </a>
 
           <a
@@ -90,7 +90,7 @@ const Contact = () => {
             className="flex gap-2 items-center"
           >
             <img src={mail} alt="img" style={{ height: "12px" }} />
-            <span>adoluwamu@gmail.com</span>
+            <span className="text-white">adoluwamu@gmail.com</span>
           </a>
 
           <a
