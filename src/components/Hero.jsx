@@ -28,11 +28,16 @@ const Hero = () => {
     >
       {/* Text */}
       <div className="flex flex-col justify-center items-center gap-4 md:items-start md:w-1/2">
-        <h1 className="text-4xl text-black font-black text-center md:text-left md:text-6xl">
-          Hi, I’m Doluwamu
-        </h1>
+        <div>
+          <p className="greetings text-green font-bold text-center md:text-left">
+            Hi there,
+          </p>
+          <h1 className="my-name text-4xl text-black font-black text-center md:text-left md:text-6xl">
+            Doluwamu Here
+          </h1>
+        </div>
         <p className="text-1xl text-black font-bold text-center md:text-left md:text-3xl">
-          I’m a <span ref={el}></span>
+          I’m a <span ref={el} className="text-green"></span>
         </p>
         <p className="text-center text-black md:text-left">
           I build websites and mobile app as well as make designs for amazing
@@ -42,7 +47,14 @@ const Hero = () => {
         </p>
         <div className="buttons flex gap-4">
           <a
-            className="hero-btn border px-5 py-2 rounded-lg border-green bg-darkGrey text-white"
+            href="mailto:adoluwamu@gmail.com"
+            className="get-in-touch border px-5 py-2 rounded-lg border-green text-green"
+          >
+            <span>Get in touch</span>
+          </a>
+
+          <a
+            className="hero-btn border px-5 py-2 rounded-lg border-darkGrey bg-darkGrey text-white"
             target="_blank"
             rel="noopener noreferrer"
             href="/docs/resume.pdf"
@@ -54,7 +66,7 @@ const Hero = () => {
       </div>
 
       {/* Image */}
-      <div className="flex justify-center md:w-1/2">
+      <div className="my-image flex justify-center md:w-1/2">
         <img src={heropic} alt="img" width={"450px"} />
       </div>
     </section>

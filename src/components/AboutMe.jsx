@@ -9,7 +9,7 @@ const AboutMe = () => {
       style={{ maxWidth: "1100px", margin: "0 auto" }}
     >
       {/* image */}
-      <div className="flex justify-center md:w-1/3 md:justify-left">
+      <div className="my-img-about flex justify-center md:w-1/3 md:justify-left">
         <img src={avatar} alt="img" width={"320px"} />
       </div>
 

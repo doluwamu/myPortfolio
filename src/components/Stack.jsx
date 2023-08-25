@@ -4,8 +4,8 @@ import StackBar from "./StackBar";
 
 const Stack = () => {
   return (
-    <section className="flex flex-col gap-8 px-4 py-6">
-      <h1 className="text-center font-bold text-5xl mb-6">
+    <section className="stack-section flex flex-col gap-8 px-4 py-24">
+      <h1 className="text-center font-bold text-white text-5xl mb-6">
         Stack and Technologies
       </h1>
 
