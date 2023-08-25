@@ -9,12 +9,15 @@ const AboutMe = () => {
       style={{ maxWidth: "1100px", margin: "0 auto" }}
     >
       {/* image */}
-      <div className="my-img-about flex justify-center md:w-1/3 md:justify-left">
+      <div
+        className="my-img-about flex justify-center md:w-1/3 md:justify-left"
+        data-aos="zoom-in"
+      >
         <img src={avatar} alt="img" width={"320px"} />
       </div>
 
       {/* text */}
-      <div className="flex flex-col gap-4 md:w-2/3">
+      <div className="flex flex-col gap-4 md:w-2/3" data-aos="fade-down">
         <h1 className="text-3xl font-bold">About me</h1>
         <p className="text-justify">
           I am a fullstack developer and product designer with over three years
@@ -28,10 +31,10 @@ const AboutMe = () => {
         </p>
         <div className="flex">
           <a
-            href="mailto:adoluwamu@gmail.com"
+            href="#projects"
             className="get-in-touch border px-5 py-2 rounded-lg border-green text-green"
           >
-            <span>Get in touch</span>
+            <span>Projects</span>
           </a>
         </div>
       </div>

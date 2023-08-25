@@ -37,9 +37,9 @@ body {
 }
 
 /* .my-name {
-  font-family: sans-serif;
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);;
-} */
+    font-family: sans-serif;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);;
+  } */
 
 .my-image {
   animation: bounce 1s infinite linear alternate;
@@ -67,9 +67,9 @@ body {
 }
 
 /* .hero-btn:hover {
-  background-color: var(--dark-green);
-  border: 1px solid var(--dark-green);
-} */
+    background-color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+  } */
 
 .get-in-touch {
   transition: 0.3s ease-in-out;
@@ -96,7 +96,6 @@ body {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
 }
 
 .proj-img-box::before {
@@ -204,11 +203,11 @@ textarea {
 }
 
 .btn-download {
-  transition: 0.5s ease-in-out;
+  transition: 0.5s;
 }
 
 .btn-download:hover {
-  background-color: var(--dark-green);
-  border-color: var(--dark-green);
+  /* background-color: var(--dark-green); */
+  /* border-color: var(--dark-green); */
   box-shadow: 0 0 10px 0.5px var(--green);
 }

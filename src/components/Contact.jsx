@@ -32,7 +32,10 @@ const Contact = () => {
 
   return (
     <section className="contact flex flex-col px-4 py-24 sm:px-10 md:items-start md:flex-row">
-      <div className="title flex flex-col gap-8 py-6 md:px-4 md:w-1/2 lg:px-24">
+      <div
+        className="title flex flex-col gap-8 py-6 md:px-4 md:w-1/2 lg:px-24"
+        data-aos="fade-down"
+      >
         <div className="header flex flex-col gap-3 xsm:items-center md:items-start">
           <h1 className="text-4xl text-white font-bold">Contact me</h1>
           <h2 className="text-2xl text-white xsm:text-center sm:text-center">
@@ -100,7 +103,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             style={{ width: "150px" }}
           >
-            <p className="text-center text-white">Download CV</p>
+            <p className="text-center text-black">Download CV</p>
           </a>
         </div>
       </div>
@@ -108,8 +111,9 @@ const Contact = () => {
       <form
         className="contact-form  w-full flex flex-col gap-6 md:gap-6 md:w-1/2 md:px-4 lg:px-14"
         // onSubmit={checkValidation}
-        action="https://formsubmit.co/adoluwamu@gmail.com"
+        action="https://formsubmit.co/d0cca4d782e850ad2308b22d8a3ba299"
         method="POST"
+        data-aos="fade-up"
       >
         <div
           className="flex flex-col md:w-1/3 w-full"

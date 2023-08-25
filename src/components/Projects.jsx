@@ -11,16 +11,19 @@ const Projects = () => {
       </div>
 
       <div className="designs flex flex-col gap-4 mt-12">
-        <h2 className="font-bold px-16 text-center">Designs</h2>
+        <h2 className="font-bold px-16 text-center" data-aos="fade-down">
+          Designs
+        </h2>
         <div className=" flex flex-col gap-4 justify-center sm:items-center flex-wrap md:flex-row">
           {projects.designs.map((design, i) => (
             <a
               href={design.dribbble}
               target="_blank"
               rel="noopener noreferrer"
-              className="proj-img-box  sm:w-2/3 md:w-1/3 lg:w-1/4"
-              style={{ maxHeight: "300px" }}
+              className="proj-img-box h-60 sm:w-1/2 md:w-1/3 lg:w-1/4"
+              // style={{ height: "200px" }}
               key={i}
+              data-aos="fade-up"
             >
               <img
                 src={design.image}
