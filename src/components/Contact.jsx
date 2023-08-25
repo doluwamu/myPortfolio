@@ -35,7 +35,7 @@ const Contact = () => {
       <div className="title flex flex-col gap-8 py-6 md:px-4 md:w-1/2 lg:px-24">
         <div className="header flex flex-col gap-3 xsm:items-center md:items-start">
           <h1 className="text-4xl text-white font-bold">Contact me</h1>
-          <h2 className="text-2xl text-white">
+          <h2 className="text-2xl text-white xsm:text-center sm:text-center">
             Let's bring your idea to reality
           </h2>
         </div>
@@ -69,7 +69,11 @@ const Contact = () => {
               <img src={dribbble} alt="dribbble" />
             </a>
 
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://whatsapp.com/dl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={whatsapp} alt="whatsapp" />
             </a>
           </div>

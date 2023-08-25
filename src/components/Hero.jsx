@@ -32,14 +32,14 @@ const Hero = () => {
           <p className="greetings text-green font-bold text-center md:text-left">
             Hi there,
           </p>
-          <h1 className="my-name text-4xl text-black font-black text-center md:text-left md:text-6xl">
+          <h1 className="my-name text-4xl text-white font-black text-center md:text-left md:text-6xl">
             Doluwamu Here
           </h1>
         </div>
-        <p className="text-1xl text-black font-bold text-center md:text-left md:text-3xl">
+        <p className="text-1xl text-white font-bold text-center md:text-left md:text-3xl">
           I’m a <span ref={el} className="text-green"></span>
         </p>
-        <p className="text-center text-black md:text-left">
+        <p className="text-center text-white md:text-left">
           I build websites and mobile app as well as make designs for amazing
           projects.
           <br />
@@ -50,7 +50,7 @@ const Hero = () => {
             href="mailto:adoluwamu@gmail.com"
             className="get-in-touch border px-5 py-2 rounded-lg border-green text-green"
           >
-            <span>Get in touch</span>
+            <span>Hire me</span>
           </a>
 
           <a

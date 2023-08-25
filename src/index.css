@@ -13,9 +13,12 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --white-fade: hsla(0, 0%, 100%, 0.533);
-  --green: hsl(191, 88%, 37%);
+  --green: hsla(198, 93%, 60%, 1);
   --dark-green: hsl(191, 96%, 19%);
   --grey: hsl(0, 0%, 36%);
+  --dark-gradient: linear-gradient(to bottom, #000 20%, transparent 60%),
+    radial-gradient(ellipse at -50% -150%, transparent 80%, #000 80%),
+    linear-gradient(145deg, #000 0, #0e0d0d 60%);
 }
 
 html {
@@ -39,7 +42,7 @@ body {
 } */
 
 .my-image {
-  animation: bounce 0.8s infinite linear alternate;
+  animation: bounce 1s infinite linear alternate;
 }
 
 @keyframes bounce {
@@ -79,7 +82,7 @@ body {
 }
 
 .my-img-about {
-  animation: scaleImg 0.9s infinite linear alternate;
+  animation: scaleImg 0.7s infinite linear alternate;
 }
 
 @keyframes scaleImg {
@@ -88,9 +91,47 @@ body {
   }
 }
 
+/* Projects */
+.proj-img-box {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.proj-img-box::before {
+  content: "";
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-img-box:hover::before {
+  height: 100%;
+}
+
+.project-details {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.proj-img-box:hover .project-details {
+  top: 50%;
+  opacity: 1;
+}
+
+/* Contact */
 .stack-section,
 .contact {
-  background: var(--black);
+  background: var(--dark-gradient);
 
   --mask: radial-gradient(50.39px at 50% 68.75px, #000 99%, #0000 101%)
       calc(50% - 50px) 0/100px 51% repeat-x,
@@ -169,5 +210,5 @@ textarea {
 .btn-download:hover {
   background-color: var(--dark-green);
   border-color: var(--dark-green);
-  box-shadow: 0 0 10px 0.5px hsl(191, 88%, 57%);
+  box-shadow: 0 0 10px 0.5px var(--green);
 }
