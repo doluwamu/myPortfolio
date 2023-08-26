@@ -1,9 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import projects from "../data/projects";
 
 import dribbble from "../assets/img/socials/dribbble.png";
 
+const Underline = ({ hidden }) => {
+  return (
+    <div
+      className={!hidden ? "flex" : "hidden"}
+      style={{ height: "3px", width: "25px", backgroundColor: "#fff" }}
+    ></div>
+  );
+};
+
 const Projects = () => {
+  const [all, setAll] = useState(true);
+  const [design, setDesign] = useState(false);
+  const [website, setWebsite] = useState(false);
+
+  const projs =
+    all === true
+      ? projects
+      : design === true
+      ? projects.filter((p) => p.type === "design")
+      : website === true
+      ? projects.filter((p) => p.type === "website")
+      : projects;
+
+  const showAllProjects = () => {
+    if (all === false) {
+      setDesign(false);
+      setWebsite(false);
+      return setAll(true);
+    }
+  };
+  const showDesignProjects = () => {
+    if (design === false) {
+      setAll(false);
+      setWebsite(false);
+      return setDesign(true);
+    }
+  };
+  const showWebProjects = () => {
+    if (website === false) {
+      setAll(false);
+      setDesign(false);
+      return setWebsite(true);
+    }
+  };
+
   return (
     <section id="projects" className="flex flex-col gap-4 px-6">
       <div className="header flex flex-col gap-4">
@@ -12,31 +56,46 @@ const Projects = () => {
       </div>
 
       <div className="designs flex flex-col gap-4 mt-12">
-        <div className="project-filter flex justify-center pb-6">
-          <h2 className="font-bold px-16 text-center" data-aos="fade-down">
+        <div className="project-filter flex justify-center items-center flex-wrap pb-6">
+          <h2
+            onClick={showAllProjects}
+            className="flex flex-col items-center font-bold px-16 py-2 text-center w-1/4 cursor-pointer"
+          >
             All
-            <div
-              className="flex"
-              style={{ height: "3px", width: "25px", backgroundColor: "#fff" }}
-            ></div>
+            {all === true ? (
+              <Underline hidden={false} />
+            ) : (
+              <Underline hidden={true} />
+            )}
           </h2>
-          <h2 className="font-bold px-16 text-center" data-aos="fade-down">
+
+          <h2
+            onClick={showDesignProjects}
+            className="flex flex-col items-center font-bold px-16 py-2 text-center w-1/4 cursor-pointer"
+          >
             Designs
-            <div
-              className="hidden"
-              style={{ height: "3px", width: "25px", backgroundColor: "#fff" }}
-            ></div>
+            {design === true ? (
+              <Underline hidden={false} />
+            ) : (
+              <Underline hidden={true} />
+            )}
           </h2>
-          <h2 className="font-bold px-16 text-center" data-aos="fade-down">
+
+          <h2
+            onClick={showWebProjects}
+            className="flex flex-col items-center font-bold px-16 py-2 text-center w-1/4 cursor-pointer"
+          >
             Websites
-            <div
-              className="hidden"
-              style={{ height: "3px", width: "25px", backgroundColor: "#fff" }}
-            ></div>
+            {website === true ? (
+              <Underline hidden={false} />
+            ) : (
+              <Underline hidden={true} />
+            )}
           </h2>
         </div>
+
         <div className="all flex flex-col gap-4 justify-center sm:items-center flex-wrap md:flex-row">
-          {projects.map((project, i) => {
+          {projs.map((project, i) => {
             return (
               <div
                 className="proj-img-box h-60 sm:w-1/2 md:w-1/3 lg:w-1/4"

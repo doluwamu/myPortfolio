@@ -4,7 +4,7 @@ import avatar from "../assets/img/avatar.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="Navbar flex items-center xsm:justify-between sm:justify-evenly md:justify-center md:gap-12">
+    <div className="Navbar flex items-center xsm:mb-20 sm:mb-20 xsm:justify-between sm:justify-evenly md:justify-center md:gap-12">
       <span className="nav-logo">
         <img src={avatar} alt="img" />
       </span>
