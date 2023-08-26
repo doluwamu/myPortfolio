@@ -1,10 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+import avatar from "../assets/img/avatar.png";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <section id="nav-bar" className="z-20 sticky top-0 mb-12 md:mb-0">
-      <p className="font-bold text-4xl text-center">Navbar</p>
-    </section>
+    <div className="Navbar flex items-center xsm:justify-between sm:justify-evenly md:justify-center md:gap-12">
+      <span className="nav-logo">
+        <img src={avatar} alt="img" />
+      </span>
+      <div className={`nav-items ${isOpen && "open"}`}>
+        <a
+          href="#about"
+          className="font-bold"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          About
+        </a>
+        <a
+          href="#stacks"
+          className="font-bold"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Stacks
+        </a>
+        <a
+          href="#projects"
+          className="font-bold"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Projects
+        </a>
+        <a
+          href="#contact-me"
+          className="font-bold"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Contact
+        </a>
+      </div>
+      <div
+        className={`nav-toggle ${isOpen && "open"}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className="bar"></div>
+      </div>
+    </div>
   );
 };
 

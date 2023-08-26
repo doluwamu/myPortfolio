@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 import TopBg from "./components/TopBg";
 import Aos from "aos";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,9 @@ function App() {
     <main style={{ maxWidth: "1440px", margin: "0 auto" }}>
       <TopBg />
       <Navbar />
+      <ScrollToTop />
+      {/* <br />
+      <br /> */}
       <Hero />
       <br />
       <br />

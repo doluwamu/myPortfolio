@@ -31,7 +31,10 @@ const Contact = () => {
   // };
 
   return (
-    <section className="contact flex flex-col px-4 py-24 sm:px-10 md:items-start md:flex-row">
+    <section
+      id="contact-me"
+      className="contact flex flex-col px-4 py-24 sm:px-10 md:items-start md:flex-row"
+    >
       <div
         className="title flex flex-col gap-8 py-6 md:px-4 md:w-1/2 lg:px-24"
         data-aos="fade-down"
@@ -83,10 +86,10 @@ const Contact = () => {
         </div>
 
         <div className="other-contact-info flex flex-col gap-4 py-8 xsm:items-center md:items-start">
-          <a href="tel:+2349019307489" className="flex gap-2 items-center">
+          {/* <a href="tel:+2349019307489" className="flex gap-2 items-center">
             <img src={phone} alt="img" style={{ height: "12px" }} />
             <span className="text-white">+234 901 9307 489</span>
-          </a>
+          </a> */}
 
           <a
             href="mailto:adoluwamu@gmail.com"
