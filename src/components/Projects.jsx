@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import projects from "../data/projects";
 
 import dribbble from "../assets/img/socials/dribbble.png";
+import url from "../assets/img/url.png";
 
 const Underline = ({ hidden }) => {
   return (
     <div
       className={!hidden ? "flex" : "hidden"}
-      style={{ height: "3px", width: "25px", backgroundColor: "#fff" }}
+      style={{
+        height: "3px",
+        width: "25px",
+        backgroundColor: "#fff",
+        transition: "0.5s ease-in-out",
+      }}
     ></div>
   );
 };
@@ -100,6 +106,7 @@ const Projects = () => {
               <div
                 className="proj-img-box h-60 sm:w-1/2 md:w-1/3 lg:w-1/4"
                 key={i}
+                data-aos="zoom-in"
               >
                 {project.type === "design" ? (
                   <>
@@ -151,8 +158,8 @@ const Projects = () => {
 
                     <div className="website-details flex flex-col gap-1 absolute">
                       <p
-                        className="text-1xl font-bold text-white"
-                        style={{ maxWidth: "250px" }}
+                        className="font-bold text-white"
+                        style={{ maxWidth: "250px", fontSize: "12px" }}
                       >
                         {project.name}
                       </p>
@@ -169,7 +176,7 @@ const Projects = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <img src={dribbble} alt="img" width={"15px"} />
+                            <img src={url} alt="img" width={"15px"} />
                           </a>
                         )}
                       </div>

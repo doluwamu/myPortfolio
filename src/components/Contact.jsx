@@ -47,9 +47,7 @@ const Contact = () => {
         </div>
 
         <div className="socials flex flex-col gap-6 xsm:items-center md:items-start">
-          <h1 className="text-2xl text-white font-bold">
-            Follow me on my socials
-          </h1>
+          <h1 className="text-2xl text-white font-bold">Connect with me</h1>
           <div className="social-links flex gap-8">
             <a
               href="https://www.linkedin.com/in/doluwamu-adeitan-41bab5201/"
