@@ -112,7 +112,7 @@ const Contact = () => {
       <form
         className="contact-form  w-full flex flex-col gap-6 md:gap-6 md:w-1/2 md:px-4 lg:px-14"
         // onSubmit={checkValidation}
-        action="https://formsubmit.co/d0cca4d782e850ad2308b22d8a3ba299"
+        action="https://formsubmit.co/adoluwamu@gmail.com"
         method="POST"
         data-aos="fade-up"
       >

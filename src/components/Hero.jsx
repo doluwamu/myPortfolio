@@ -27,7 +27,10 @@ const Hero = () => {
       style={{ maxHeight: "650px" }}
     >
       {/* Text */}
-      <div className="flex flex-col justify-center items-center gap-4 md:items-start md:w-1/2">
+      <div
+        className="flex flex-col justify-center items-center gap-4 md:items-start md:w-1/2"
+        data-aos="fade-up"
+      >
         <div>
           <p className="greetings text-green font-bold text-center md:text-left">
             Hi there,
@@ -67,7 +70,7 @@ const Hero = () => {
 
       {/* Image */}
       <div className="my-image flex justify-center md:w-1/2">
-        <img src={heropic} alt="img" width={"450px"} />
+        <img src={heropic} alt="img" width={"450px"} data-aos="zoom-in" />
       </div>
     </section>
   );
