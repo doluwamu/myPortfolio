@@ -100,13 +100,15 @@ const Projects = () => {
           </h2>
         </div>
 
-        <div className="all flex flex-col gap-4 justify-center sm:items-center flex-wrap md:flex-row">
+        <div
+          className="all flex flex-col gap-4 justify-center sm:items-center flex-wrap md:flex-row"
+          data-aos="fade-up"
+        >
           {projs.map((project, i) => {
             return (
               <div
                 className="proj-img-box h-60 sm:w-1/2 md:w-1/3 lg:w-1/4"
                 key={i}
-                data-aos="zoom-in"
               >
                 {project.type === "design" ? (
                   <>

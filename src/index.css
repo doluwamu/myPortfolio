@@ -23,7 +23,7 @@
 }
 
 html {
-  color-scheme: dark light;
+  color-scheme: dark only;
 }
 
 body {
@@ -35,17 +35,18 @@ body {
 
 /* scroll up arrow */
 .scroll-to-top {
-  background-color: var(--dark-green);
-  border-radius: 100%;
+  background-color: var(--dark-green) !important;
+  border-radius: 100% !important;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-shadow: 0 0 8px 0.2px var(--green);
+  box-shadow: 0 0 8px 0.2px var(--green) !important;
+  z-index: 99999 !important;
 }
 
 .scroll-to-top svg {
-  fill: var(--white);
+  fill: var(--white) !important;
 }
 /* scroll up arrow */
 
