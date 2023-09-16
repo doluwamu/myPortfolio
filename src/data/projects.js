@@ -5,6 +5,7 @@ import nikeapp from "../assets/img/projects/designs/nikeapp.jpg";
 import arch from "../assets/img/projects/designs/arch.jpg";
 import nutrimender from "../assets/img/projects/designs/nutrimender.jpg";
 import nikehero from "../assets/img/projects/designs/nikehero.jpg";
+import youtube from "../assets/img/projects/designs/youtube.jpg";
 
 import rtf from "../assets/img/projects/website/rtf.png";
 import xrnet from "../assets/img/projects/website/xrnet.png";
@@ -59,6 +60,13 @@ const projects = [
     image: nikehero,
     description: "Simple design of a hero section featuring Nike",
     dribbble: "https://dribbble.com/shots/22264968-Nike-quick-design",
+    type: "design",
+  },
+  {
+    name: "YouTube Dark Mode",
+    image: youtube,
+    description: "A simple redesign of youtube in dark mode",
+    dribbble: "https://dribbble.com/shots/22552203-Youtube-dark-mode-design",
     type: "design",
   },
   {

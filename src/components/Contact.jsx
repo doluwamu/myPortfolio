@@ -104,7 +104,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             style={{ width: "150px" }}
           >
-            <p className="text-center text-black">Download CV</p>
+            <p className="text-center text-black">Download Resume</p>
           </a>
         </div>
       </div>
