@@ -92,24 +92,25 @@ const stacks = {
     },
     {
       id: "2",
+      image: vue,
+      experience: "85%",
+    },
+    {
+      id: "3",
       image: nestjs,
       experience: "75%",
     },
     {
-      id: "3",
+      id: "4",
       image: mysql,
       experience: "65%",
     },
     {
-      id: "4",
+      id: "5",
       image: postgres,
       experience: "65%",
     },
-    {
-      id: "5",
-      image: vue,
-      experience: "55%",
-    },
+
     {
       id: "6",
       image: python,
