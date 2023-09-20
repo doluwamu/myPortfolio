@@ -86,7 +86,7 @@ const projects = [
     name: "AutoWorld",
     image: autoworld,
     url: "https://autoworld-cars.netlify.app/",
-    github: "",
+    github: "https://github.com/doluwamu/AutoWorld",
     type: "website",
   },
 ];

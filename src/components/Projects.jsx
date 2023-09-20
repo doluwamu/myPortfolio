@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import projects from "../data/projects";
 
 import dribbble from "../assets/img/socials/dribbble.png";
+import github from "../assets/img/github-light.png";
 import url from "../assets/img/url.png";
 
 const Underline = ({ hidden }) => {
@@ -179,6 +180,15 @@ const Projects = () => {
                             rel="noopener noreferrer"
                           >
                             <img src={url} alt="img" width={"15px"} />
+                          </a>
+                        )}
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img src={github} alt="img" width={"15px"} />
                           </a>
                         )}
                       </div>
