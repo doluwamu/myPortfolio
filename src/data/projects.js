@@ -9,6 +9,7 @@ import youtube from "../assets/img/projects/designs/youtube.jpg";
 
 import rtf from "../assets/img/projects/website/rtf.png";
 import xrnet from "../assets/img/projects/website/xrnet.png";
+import autoworld from "../assets/img/projects/website/autoworld.png";
 
 const projects = [
   {
@@ -79,6 +80,13 @@ const projects = [
     name: "XRNet",
     image: xrnet,
     url: "https://xrnet.netlify.app",
+    type: "website",
+  },
+  {
+    name: "AutoWorld",
+    image: autoworld,
+    url: "https://autoworld-cars.netlify.app/",
+    github: "",
     type: "website",
   },
 ];
