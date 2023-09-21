@@ -1,7 +1,7 @@
 import foode from "../assets/img/projects/designs/foode.jpg";
 import beautoon from "../assets/img/projects/designs/beautoon.jpg";
 import izpay from "../assets/img/projects/designs/izpay.jpg";
-import nikeapp from "../assets/img/projects/designs/nikeApp.jpg";
+// import nikeapp from "../assets/img/projects/designs/nikeApp.jpg";
 import arch from "../assets/img/projects/designs/arch.jpg";
 import nutrimender from "../assets/img/projects/designs/nutrimender.jpg";
 import nikehero from "../assets/img/projects/designs/nikehero.jpg";
@@ -33,13 +33,13 @@ const projects = [
     dribbble: "https://dribbble.com/shots/22143093-IZPay",
     type: "design",
   },
-  {
-    name: "Nike app design",
-    image: nikeapp,
-    description: "A dummy design of the Nike app",
-    dribbble: "https://dribbble.com/shots/22302329-Nike-app-design",
-    type: "design",
-  },
+  // {
+  //   name: "Nike app design",
+  //   image: nikeapp,
+  //   description: "A dummy design of the Nike app",
+  //   dribbble: "https://dribbble.com/shots/22302329-Nike-app-design",
+  //   type: "design",
+  // },
   {
     name: "Arch dashboard",
     image: arch,
