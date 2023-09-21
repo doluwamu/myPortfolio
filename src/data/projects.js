@@ -1,9 +1,9 @@
 import foode from "../assets/img/projects/designs/foode.jpg";
 import beautoon from "../assets/img/projects/designs/beautoon.jpg";
 import izpay from "../assets/img/projects/designs/izpay.jpg";
-import nikeapp from "../assets/img/projects/designs/nikeapp.jpg";
 import arch from "../assets/img/projects/designs/arch.jpg";
 import nutrimender from "../assets/img/projects/designs/nutrimender.jpg";
+import nikedesign from "../assets/img/projects/designs/nikedesign.jpg";
 import nikehero from "../assets/img/projects/designs/nikehero.jpg";
 import youtube from "../assets/img/projects/designs/youtube.jpg";
 
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     name: "Nike app design",
-    image: nikeapp,
+    image: nikedesign,
     description: "A dummy design of the Nike app",
     dribbble: "https://dribbble.com/shots/22302329-Nike-app-design",
     type: "design",
