@@ -10,6 +10,7 @@ import youtube from "../assets/img/projects/designs/youtube.jpg";
 import rtf from "../assets/img/projects/website/rtf.png";
 import xrnet from "../assets/img/projects/website/xrnet.png";
 import autoworld from "../assets/img/projects/website/autoworld.png";
+import foodipe from "../assets/img/projects/website/foodipe.png";
 
 const projects = [
   {
@@ -87,6 +88,13 @@ const projects = [
     image: autoworld,
     url: "https://autoworldcars.netlify.app/",
     github: "https://github.com/doluwamu/AutoWorld",
+    type: "website",
+  },
+  {
+    name: "Foodipe",
+    image: foodipe,
+    url: "https://foodipe.netlify.app/",
+    github: "https://github.com/doluwamu/Foodipe",
     type: "website",
   },
 ];
