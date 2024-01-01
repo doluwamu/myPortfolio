@@ -11,6 +11,7 @@ import rtf from "../assets/img/projects/website/rtf.png";
 import xrnet from "../assets/img/projects/website/xrnet.png";
 import autoworld from "../assets/img/projects/website/autoworld.png";
 import foodipe from "../assets/img/projects/website/foodipe.png";
+import taskDragon from "../assets/img/projects/website/taskDragon.png";
 
 const projects = [
   {
@@ -74,7 +75,7 @@ const projects = [
   {
     name: "Rock tennis foundation",
     image: rtf,
-    url: "https://rocktennisfoundation.org/",
+    url: "https://rocktennisfoundation.com/",
     type: "website",
   },
   {
@@ -95,6 +96,13 @@ const projects = [
     image: foodipe,
     url: "https://foodipe.netlify.app/",
     github: "https://github.com/doluwamu/Foodipe",
+    type: "website",
+  },
+  {
+    name: "TaskDragon",
+    image: taskDragon,
+    url: "https://taskdragon.netlify.app/",
+    github: "https://github.com/doluwamu/TaskDragon",
     type: "website",
   },
 ];
