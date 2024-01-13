@@ -81,7 +81,7 @@ const projects = [
   {
     name: "XRNet",
     image: xrnet,
-    url: "https://xrnet.netlify.app",
+    url: "https://xrnet.tech",
     type: "website",
   },
   {
